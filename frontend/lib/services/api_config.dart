@@ -4,13 +4,13 @@ class ApiConfig {
   // Default base URL based on platform
   static String get baseUrl {
     if (kIsWeb) {
-      return 'http://localhost:8080/api';
+      return 'https://freshguard-ai-vvx9.onrender.com/api';
     } else if (defaultTargetPlatform == TargetPlatform.android) {
       // Physical Android phone on the same Wi-Fi network as the Spring Boot server
-      return 'http://172.20.10.6:8080/api';
+      return 'https://freshguard-ai-vvx9.onrender.com/api';
     } else {
       // Windows Desktop, macOS, Linux
-      return 'http://localhost:8080/api';
+      return 'https://freshguard-ai-vvx9.onrender.com/api';
     }
   }
 
